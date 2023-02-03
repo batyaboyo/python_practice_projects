@@ -1,0 +1,16 @@
+body {
+    background-color: #012;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding: 20px;
+    color: teal;
+    font-size: 30px;
+    text-transform: capitalize;
+    border: 1px solid teal;
+    border-radius: 15px;
+}
