@@ -1,7 +1,9 @@
-body {
-    background-color: #012;
-    background-image: url("./bgimg1.jpg");
-    
+html {
+    background: url(./bgimg1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .clock {
@@ -10,14 +12,23 @@ body {
     align-items: center;
 }
 
-#countdown {
+.heading {
+    background-color: whitesmoke;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
-    padding: 20px;
+    margin-top: 20px;
     color: teal;
-    font-size: 30px;
-    text-transform: capitalize;
+    font-size: inherit;
+    font-weight: 500;
+    padding: 20px;
+    text-transform: uppercase;
     border: 1px solid teal;
     border-radius: 15px;
+}
+
+#countdown {
+    text-transform: capitalize;
+    color: #012;
+    font-size: 25px;
+    font-family: cursive;
 }

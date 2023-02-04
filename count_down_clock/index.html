@@ -11,8 +11,14 @@
 </head>
 
 <body>
-    <div class="clock"><div id="countdown"></div></div>
+    <div class="clock">
+        <div class="heading">
+            <h1>COUNT DOWN TO 2024</h1>
+            <div id="countdown">
 
+            </div>
+        </div>
+    </div>
     <script>
         function countdownTimer() {
             const difference = +new Date("2024-01-01") - +new Date();
@@ -29,7 +35,7 @@
                     .map((part) => {
                         return `${parts[part]} ${part}`;
                     })
-                    .join(":  ");
+                    .join(" :  ");
             }
 
             document.getElementById("countdown").innerHTML = remaining;
