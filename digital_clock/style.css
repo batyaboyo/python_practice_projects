@@ -18,7 +18,7 @@ body {
 .box {
     font-size: 85px;
     margin: 100px;
-    color: crimson;
+    color: #012;
     display: flex;
     justify-content: center;
     align-items: center;
