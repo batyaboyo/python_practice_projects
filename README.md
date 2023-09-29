@@ -1,2 +1,2 @@
-# js_practice_projects
-JavaScript Practice Projects
+# python_practice_projects
+Python Practice Projects
