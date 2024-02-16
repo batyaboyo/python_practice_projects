@@ -1,3 +1,3 @@
 # python_practice_projects
 
-Python Practice Projects
+Simple Python Practice Projects
