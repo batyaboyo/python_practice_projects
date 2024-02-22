@@ -7,7 +7,8 @@ def display_menu():
     print("3. Mark Task as Completed")
     print("4. Delete Task")
     print("5. Help")
-    print("6. Exit")
+    print("6. Menu")
+    print("7. Exit")
 
 def view_tasks(tasks):
     if not tasks:
@@ -24,7 +25,7 @@ def add_task(tasks):
 
 def mark_completed(tasks):
     view_tasks(tasks)
-    index = int(input("\nEnter the index of the task to mark as completed: ")) - 1
+    index = int(input("\nChoose the task to mark as completed: ")) - 1
     if 0 <= index < len(tasks):
         tasks[index] += " - Completed"
         print("Task marked as completed.")
@@ -33,7 +34,7 @@ def mark_completed(tasks):
 
 def delete_task(tasks):
     view_tasks(tasks)
-    index = int(input("\nEnter the index of the task to delete: ")) - 1
+    index = int(input("\nChoose the task to delete: ")) - 1
     if 0 <= index < len(tasks):
         del tasks[index]
         print("Task deleted successfully.")
@@ -42,10 +43,11 @@ def delete_task(tasks):
 
 def main():
     tasks = []
+    
+    display_menu()
     while True:
-        display_menu()
         choice = input("Enter your choice: ")
-
+        
         if choice == '1':
             view_tasks(tasks)
         elif choice == '2':
@@ -57,25 +59,30 @@ def main():
         elif choice =='5':
             print('\nThis a command line based task manager app to help you be more productive and finish tasks in time.')
             print('''           
-           To use this task Manager choose.....
+To use this task Manager choose.....
+
+1 to view tasks
            
-           1 to view tasks
+2 to add tasks 
            
-           2 to add tasks 
+3 to mark tasks complete
            
-           3 to mark tasks complete
+4 to delete a task
            
-           4 to delete a task
+5 to get help
            
-           5 to get help
+6 for the menu
            
-           6 to exit app
+7 to exit app
             ''')
-        elif choice == '6':
+        elif choice =='6':
+            display_menu()
+            
+        elif choice == '7':
             print("Exiting...")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 7.")
 
 if __name__ == "__main__":
     main()
