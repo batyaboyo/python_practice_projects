@@ -6,7 +6,8 @@ def display_menu():
     print("2. Add Task")
     print("3. Mark Task as Completed")
     print("4. Delete Task")
-    print("5. Exit")
+    print("5. Help")
+    print("6. Exit")
 
 def view_tasks(tasks):
     if not tasks:
@@ -53,7 +54,24 @@ def main():
             mark_completed(tasks)
         elif choice == '4':
             delete_task(tasks)
-        elif choice == '5':
+        elif choice =='5':
+            print('\nThis a command line based task manager app to help you be more productive and finish tasks in time.')
+            print('''           
+           To use this task Manager choose.....
+           
+           1 to view tasks
+           
+           2 to add tasks 
+           
+           3 to mark tasks complete
+           
+           4 to delete a task
+           
+           5 to get help
+           
+           6 to exit app
+            ''')
+        elif choice == '6':
             print("Exiting...")
             break
         else:
