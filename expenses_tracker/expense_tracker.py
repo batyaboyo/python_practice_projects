@@ -41,7 +41,7 @@ def view_report():
     else:
         print("No expenses found.")
 
-def main():
+def expenses():
     initialize_data_file()
     
     print("\nExpense Tracker")
@@ -71,5 +71,4 @@ def main():
         else:
             print("Invalid choice. Please enter a number between 1 and 4.")
 
-if __name__ == "__main__":
-    main()
+expenses()

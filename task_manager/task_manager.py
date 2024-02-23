@@ -41,7 +41,7 @@ def delete_task(tasks):
     else:
         print("Invalid index.")
 
-def main():
+def task_manager():
     tasks = []
     
     display_menu()
@@ -84,5 +84,4 @@ To use this task Manager choose.....
         else:
             print("Invalid choice. Please enter a number between 1 and 7.")
 
-if __name__ == "__main__":
-    main()
+task_manager()
