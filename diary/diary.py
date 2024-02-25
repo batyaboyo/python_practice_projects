@@ -30,7 +30,7 @@ class Diary:
                     entries.append(decrypted_entry)
         return entries
 
-def main():
+def diary_app():
     key = Fernet.generate_key()
     diary = Diary(key)
 
@@ -56,5 +56,5 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
-if __name__ == "__main__":
-    main()
+
+diary_app()
